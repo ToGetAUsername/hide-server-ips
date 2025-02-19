@@ -10,10 +10,6 @@
 	"license": "MIT",
 
 	"environment": "client",
-	"entrypoints": {
-		"modmenu": ["togetausername.hideserverips.ModMenuIntegration"]
-	},
-
 	"mixins": [
 		"hide-server-ips.mixins.json"
 	],

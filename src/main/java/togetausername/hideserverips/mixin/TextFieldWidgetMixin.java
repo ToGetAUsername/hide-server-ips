@@ -9,7 +9,7 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.text.TranslatableTextContent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import togetausername.hideserverips.ConfigScreen;
+import togetausername.hideserverips.HideServerIps;
 
 @Mixin(TextFieldWidget.class)
 public abstract class TextFieldWidgetMixin {
@@ -21,7 +21,7 @@ public abstract class TextFieldWidgetMixin {
 		Screen screen = MinecraftClient.getInstance().currentScreen;
 		if(((TextFieldWidget) (Object) this).getMessage().getContent() instanceof TranslatableTextContent content
 			&& content.getKey().equals("addServer.enterIp")
-			&& !ConfigScreen.shouldShowIps()
+			&& !HideServerIps.shouldShowIps
 			&& (screen instanceof AddServerScreen || screen instanceof DirectConnectScreen))
 				return "*".repeat(original.length());
 
