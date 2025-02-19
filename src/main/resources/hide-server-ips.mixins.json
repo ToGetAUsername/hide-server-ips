@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "togetausername.hideserverips.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"TextFieldWidgetMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

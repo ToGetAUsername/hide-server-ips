@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "hide-server-ips",
+	"version": "${version}",
+
+	"name": "hide-server-ips",
+	"description": "hides server ips",
+	"authors": ["ToGetAUsername"],
+
+	"license": "MIT",
+
+	"environment": "client",
+	"entrypoints": {
+		"modmenu": ["togetausername.hideserverips.ModMenuIntegration"]
+	},
+
+	"mixins": [
+		"hide-server-ips.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": ">=${minecraft_version}"
+	},
+	"recommends": {
+		"modmenu_version": ">=${modmenu_version}"
+	}
+}
