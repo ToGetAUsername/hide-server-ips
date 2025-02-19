@@ -17,8 +17,5 @@
 	"depends": {
 		"fabricloader": ">=${loader_version}",
 		"minecraft": ">=${minecraft_version}"
-	},
-	"recommends": {
-		"modmenu_version": ">=${modmenu_version}"
 	}
 }
